@@ -9,7 +9,7 @@ class Pemesanan extends Migration
     public function up()
     {
         $this->forge->addField([
-            'id_pemesanan' => ['type' => 'INT', 'auto_increment' => true],
+            'id_pemesanan' => ['type' => 'INT', 'unsigned' => true, 'auto_increment' => true],
             'id_customer' => ['type' => 'INT', 'unsigned' => true],
             'id_pegawai' => ['type' => 'INT', 'unsigned' => true],
             'id_metode' => ['type' => 'INT', 'unsigned' => true],
