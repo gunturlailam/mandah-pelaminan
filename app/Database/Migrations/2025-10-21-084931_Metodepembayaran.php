@@ -11,6 +11,7 @@ class Metodepembayaran extends Migration
         $this->forge->addField([
             'id_metode' => [
                 'type' => 'INT',
+                'unsigned' => true,
                 'auto_increment' => true,
             ],
             'nama_metode' => [
